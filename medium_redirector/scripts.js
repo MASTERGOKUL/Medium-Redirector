@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("github_link").addEventListener("click", function () {
+    redirect("github");
+  });
+
   document.getElementById("readmedium").addEventListener("click", function () {
-    var site = "readmedium";
-    redirect(site);
+    redirect("readmedium");
   });
 
   document.getElementById("freedium").addEventListener("click", function () {
-    var site = "freedium";
-    redirect(site);
+    redirect("freedium");
   });
 });
 
@@ -33,6 +35,11 @@ function redirect(site) {
         chrome.tabs.create({ url: "https://" + medium_link.join("/") }, function (newTab) {
           chrome.tabs.move(newTab.id, { index: tab.index + 1 });
         });
+    }
+    else if (site === "github") {
+      chrome.tabs.create({ url: "https://github.com/mastergokul" }, function (newTab) {
+        chrome.tabs.move(newTab.id, { index: tab.index + 1 });
+      }); 
     }
   })();
 }
