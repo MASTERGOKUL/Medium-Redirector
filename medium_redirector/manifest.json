@@ -1,0 +1,23 @@
+{
+  "name": "Medium Redirector",
+  "version": "1.0",
+  "description": "Redirects medium.com links to medium @readmedium and @freedium",
+  "manifest_version": 3,
+  "author": "Master Gokul",
+  "action": {
+    "default_popup": "redirect.html",
+    "default_title": "Medium Redirector"
+  },
+  "permissions": ["activeTab", "webNavigation"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["scripts.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
