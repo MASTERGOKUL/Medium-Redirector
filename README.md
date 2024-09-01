@@ -8,4 +8,5 @@ Chrome Extension Redirects the medium page to @readmedium and @freedium websites
 5. It opens a new tab on the browser with the read medium or freedium site.
 
 Demo Image
-![Demo image of the site](./Screenshot 2024-09-01 134924.png)
+
+![Demo image of the site](https://github.com/MASTERGOKUL/Medium-Redirector/blob/main/Screenshot%202024-09-01%20134924.png)
