@@ -7,4 +7,5 @@ Chrome Extension Redirects the medium page to @readmedium and @freedium websites
 4. Go to any medium premium content page then click this extension and click either readmedium or freedium.
 5. It opens a new tab on the browser with the read medium or freedium site.
 
-
+Demo Image
+![Demo image of the site](./Screenshot 2024-09-01 134924.png)
